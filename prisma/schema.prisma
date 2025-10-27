@@ -1,7 +1,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
 }
 
 datasource db {
@@ -16,7 +15,7 @@ model Comida {
   tipo           String
   preco          Float
   descricao      String
-  creatdAt       DateTime @default(now())
+  createdAt       DateTime @default(now())
   updateAt       DateTime @updatedAt
 
   @@map("comidas")
